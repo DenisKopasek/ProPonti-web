@@ -1,0 +1,17 @@
+.feature {
+    margin: 4rem 0;
+
+}
+
+.feature .content {
+    position: relative;
+    bottom: 2rem;
+}
+
+header{
+    color: black;
+    
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
