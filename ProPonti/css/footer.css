@@ -1,0 +1,71 @@
+footer {
+    min-height: 10vh;
+    background-color: rgb(209, 22, 22),
+   background-;
+    
+    background-repeat: no-repeat;
+    background-position: 45% 50%;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    font-family: Tahoma,Verdana, sans-serif;
+    background: rgb(0, 0, 0);
+    margin: 0;
+    position: relative;
+
+}
+
+
+.main-footer {
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+    left: 0px;
+    top: 100%;
+    z-index: 10;
+ 
+}
+
+
+.main-footer .menu {
+    font-size: 2rem;
+    line-height: 7;
+    display: flex;
+    gap: 5rem;
+}
+
+
+.main-footer a {
+    display: block;
+    padding-top: 0.7rem;
+    padding-top: 0.35rem; 
+    color: rgb(0, 0, 0);
+}
+
+
+.main-footer img {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 36px;
+    background-color: #000000;
+    color: #6c2323;
+    margin: 0 3px 3px 0;
+
+    
+
+}  
+
+
+
+/*@media screen and (min-width 420px) {
+    
+    header {
+        background-position: 50% 50%;
+        
+    }*/
