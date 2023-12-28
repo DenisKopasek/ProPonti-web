@@ -1,8 +1,6 @@
 footer {
-    min-height: 10vh;
-    background-color: rgb(209, 22, 22),
-   background-;
-    
+    height: 100px;
+    background-color: rgb(209, 22, 22);   
     background-repeat: no-repeat;
     background-position: 45% 50%;
     background-size: cover;
@@ -11,7 +9,6 @@ footer {
     background: rgb(0, 0, 0);
     margin: 0;
     position: relative;
-
 }
 
 
@@ -25,8 +22,7 @@ footer {
     text-align: center; 
     left: 0px;
     top: 100%;
-    z-index: 10;
- 
+    z-index: 1;
 }
 
 
@@ -42,9 +38,32 @@ footer {
     display: block;
     padding-top: 0.7rem;
     padding-top: 0.35rem; 
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    object-position: 0%;
+    transform: translateX(-200%) translateY(-180%);
+    left: 50%;
+    top: 0%;
 }
 
+.main-footer p {
+    display: block;
+    color: rgb(255, 255, 255);
+    transform: translateX(-75%) translateY(-500%);
+    left: 0%;
+    top: 0%;
+}
+
+.main-text a {
+    display: block;
+    padding-top: 0.7rem;
+    padding-top: 0.35rem; 
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%) translateY(-0%);
+    z-index: 11;
+}
 
 .main-footer img {
     display: inline-block;
@@ -56,16 +75,6 @@ footer {
     background-color: #000000;
     color: #6c2323;
     margin: 0 3px 3px 0;
-
-    
-
+  
 }  
 
-
-
-/*@media screen and (min-width 420px) {
-    
-    header {
-        background-position: 50% 50%;
-        
-    }*/
