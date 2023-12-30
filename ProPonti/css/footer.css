@@ -48,7 +48,7 @@ footer {
 .main-footer p {
     display: block;
     color: rgb(255, 255, 255);
-    transform: translateX(-75%) translateY(-500%);
+    transform: translateX(-500%) translateY(-500%);
     left: 0%;
     top: 0%;
 }

@@ -35,9 +35,7 @@ main {
     left: 0px;
     top: 0px;
     z-index: 2;
- 
 }
-
 
 .main-nav .menu {
     font-size: 1.2rem;
@@ -65,3 +63,33 @@ main {
 }  
 
 
+.flags {
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    transform: translateY(-50%);
+    right: 1%;
+    top: 50%;
+    z-index: 2;
+}
+
+.flags li{
+    list-style: none;
+
+}
+
+
+.flags-class img {
+    width: 15px;
+    height: auto;
+
+} 
+
+.sk img{    
+    position: relative;
+    transform: translateY(-50%);
+    right: 1%;
+    top: 100%;
+    z-index: 3;
+
+}
