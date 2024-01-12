@@ -1,0 +1,155 @@
+footer {
+    height: 650px;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    background-repeat: no-repeat;
+    background-position: 45% 50%;
+    background-size: cover;
+    position: relative;
+    bottom: 0%;
+    z-index: 2;
+    margin-top: 100px;
+    
+}
+
+.main-footer {
+    width: fit-content;
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    height: 100px;
+}
+
+
+.footer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: fit-content;
+    white-space: nowrap;
+
+}
+
+.follow {
+    position: absolute;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    margin: 0;
+    width: fit-content;
+    vertical-align: middle;
+    text-align: left;
+    text-decoration: none;
+    font-size: 1.5rem;
+    white-space: nowrap;
+
+
+}
+
+.quote {
+    width: 100%;
+    max-width: 750px;
+    max-width: none;
+    position: absolute;
+    left: 50%;
+    top: 3%;
+    text-align: center;
+    transform: translateX(-50%);
+    color: rgb(255, 255, 255);
+    max-width: none;
+    font-size: 1.3rem;
+    margin-right: 0px 100px 10px 0;
+    white-space: nowrap;
+
+}
+
+.underline {
+    text-decoration: underline;
+    text-underline-offset: 15px;
+
+}
+
+@media screen and (max-width: 600px) {
+    .quote {
+        white-space: normal;
+    }
+    .underline {
+    text-decoration: none;
+    text-underline-offset: 15px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 500px) {
+    .follow {
+        white-space: nowrap;
+    }
+
+    
+
+    .footer{
+        text-align: center;
+        justify-content: center;
+    
+     }
+
+}
+
+
+.footer-text{
+    color: white;
+    margin: 0;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    font-size: 1.3rem;
+    width: 357px;
+}
+
+.footer-text p {
+    text-decoration: underline;
+}
+ 
+.socials {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    margin: 0 5px 0px 0;
+
+}
+
+.footer-nav {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    display: grid;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+
+}
+
+.footer-nav {
+    transition: all 0.3s ease-in-out;
+}
+
+.transition {
+    text-decoration: none;
+    color: white;
+}
+
+.transitioned {
+    transform: translateX(-10px);
+    color: #ff0000; /* Change to your desired color */
+  }

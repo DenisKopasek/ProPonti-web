@@ -1,0 +1,93 @@
+article{
+    width: 100vw;
+    margin: 0 auto;
+    position: absolute;
+    
+}
+
+.activity{
+    display: block;
+    position: relative;
+    top: 100%;
+    border: black;
+    gap: 10vw;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+}
+
+
+
+.company {
+    display: inline-block;
+    justify-content: left;
+    vertical-align: top;
+    width: 400px;
+    max-width: 400px;
+    height: 400px;
+    text-align: justify;
+    position: relative;
+    margin: 0px 4.5vw;
+    flex: 3;
+    border: 1px solid #000000; /* Border style and color */
+    margin-bottom: 10px;
+    padding: 10px 50px;
+    margin: 3vw 3vw 3vw 3vw;
+
+}
+
+.description {
+    margin: 200px auto 00px auto;
+    height: 200px;
+    max-width: 50ch;
+
+}
+
+.Logoanddesc { 
+    margin-bottom: 200px;
+}
+
+.PPlogo {
+    position: relative;
+    width: fit-content;
+    height: 200px;
+    margin: 0px auto 100px ;
+   
+
+}
+
+
+
+
+@media screen and (min-width: 981px) {
+    .Logoanddesc{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 1080px;
+        width: 100vw;
+        margin: 300px 0px 0px 0px;
+        display: flex; 
+        
+    }
+
+
+
+    .description{
+        position: relative;
+        margin: 0px 20px 00px 40px;
+        
+    }
+
+    .PPlogo{
+        position: relative;
+        right: 0%;
+        top: 50%;
+        transform: translateX(-0%) translateY(-50%);
+        width: 500px;
+        margin: 0px 20px 00px auto;
+       
+    }
+
+  
+    }

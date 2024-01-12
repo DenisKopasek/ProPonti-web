@@ -5,32 +5,153 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProPonti</title>
     
-   <link rel="stylesheet" type="text/css" href="/css/header.css" />
-   <link rel="stylesheet" type="text/css" href="/css/general.css" />
-   <link rel="stylesheet" type="text/css" href="/css/footer.css" />
-   <link rel="stylesheet" type="text/css" href="/css/feature.css" />
+   <link rel="stylesheet" type="text/css" href="/ProPonti/css/feature.css" />
+   <link rel="stylesheet" type="text/css" href="/ProPonti/css/general.css" />
+   <link rel="stylesheet" type="text/css" href="/ProPonti/css/header.css" />
+   <link rel="stylesheet" type="text/css" href="/ProPonti/css/footer.css" />
+   <link rel="stylesheet" type="text/css" href="/ProPonti/Index/slideshow.css" />
+   <link rel="stylesheet" type="text/css" href="/ProPonti/Index/index.css" />
    <link rel="shortcut icon" type="image/x-icon" href="/ProPonti/Fotky/favicon.ico">
 </head>
 
 <body>
     <header>
-        <nav class="main-nav">
-         <a href="index.html"><img src="/Images/LogoProPonti-reverse.png"></a>
-             <ul class="menu container">
-             <li><a href="/Index/index_sk.html">HOME</a></li>
-             <li><a href="o_nás.html">DIAGNOSTIKY MOSTOV</a></li>
-             <li><a href="Referencie.html">REFERENCIE</a></li>
-             <li><a href="/Blog/Blog_sk.html">BLOG</a></li>
-             <li><a href="/Download/download_sk.html">NA STIAHNUTIE</a></li>
-             <li><a href="/contacts/contacts_sk.html">KONTAKT</a></li>
-             </ul>
-        </nav>
-             <nav class="flags-class">
-             <ul class="flags">
-                <li><a href="index.html"><img src="/Images/Kontakt_Logá/sk_sk.gif"></a></li>
-                <li><a href="general.html"><img src="/Images/Kontakt_Logá/en.gif"></a></li></nav>
-           </ul>     
+        <a href="index.html">
+            <img class="LOGO" src="/ProPonti/Images/LogoProPonti-reverse.png">
+        </a>
+          <nav class="nav" id="menu-toggle" onclick="toggleMenu()">
+            <div class="menu-toggle">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+        <ul class="menu-container" id="dropdown-menu">
+            <li><a class="navigation" href="/Index/index_sk.html">HOME</a></li>
+            <li><a class="navigation" href="o_nás.html">DIAGNOSTIKY</a></li>
+            <li><a class="navigation" href="Referencie.html">REFERENCIE</a></li>
+            <li><a class="navigation" href="/Blog/Blog_sk.html">BLOG</a></li>
+            <li><a class="navigation" href="/Download/download_sk.html">NA STIAHNUTIE</a></li>
+            <li><a class="navigation" href="/contacts/contacts_sk.html">KONTAKT</a></li>
+        </ul></nav>
+        <ul class="flags">
+            <li><a class="flagsIMG" href="index.html"><img src="/ProPonti/Images/Kontakt_Logá/sk_sk.gif"></a></li>
+            <li><a class="flagsIMG" href="general.html"><img src="/ProPonti/Images/Kontakt_Logá/en.gif"></a></li>
+        </ul>     
      </header>
+
+
+     <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+
+  
+    <div class="mySlides fade">
+      <img src="/ProPonti/Images/Slideshow/vrable.jpg" style="width:100%">   
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="/ProPonti/Images/Slideshow/most_topolcany.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="/Images/Slideshow/most_vrable.jpeg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="/Images/Slideshow/vrable.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides fade">
+        <img src="/Images/Slideshow/mosty_motorky.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="/Images/Slideshow/bailey_bridge_kunov.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="/Images/Slideshow/proponti_vykres_mosta.jpeg" style="width:100%">
+      </div>
+
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align: center;margin-top: -50px;z-index: 10;">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+  </div>
+  <figure class="Logoanddesc">
+  <div class="description">
+    Slovo <strong>Pont</strong>, ktoré pochádza z latinčiny, sa v mierne zmenených podobách už od pradávna používalo pre označenie mosta a mostných konštrukcií. 
+   Práve z tohto slovného základu vychádza aj názov <strong>ProPonti</strong>, ktorý by sa dal v slovenčine nahradiť aj slovným spojením pre-mosty.
+  </div>
+  <div class="PPlogo">
+  <img src="/ProPonti/Images/logo_proponti_s_popisom.png" style="width:100%">   
+  </div>
+  </figure>
+   <article class="activity">
+ 
+    <div class="company"><h2>Inžinierska činnosť</h2>Činnosť autorizovaného stavebného inžiniera v oblasti statiky so špecializáciou na betónové konštrukcie, mosty a lávky pre peších. 
+        Vypracovanie kompletnej výkresovej dokumentácie a výpočtov pre projekt územného rozhodnutia, 
+        stavebného povolenia a realizácie stavby.</h3></div>
+    <div class="company"><h2>Expertízna činnosť</h2>Činnosť v oblasti výskumných projektov 
+        a odborných posudkov inžinierskych stavieb ako aj prepočty zaťažiteľnosti mostov.</h3></div>
+    <div class="company"><h2>Diagnostická činnosť</h2>Firma sa venuje aj hlavným prehliadkam, diagnostike mostov a 
+        konštrukcií, zaťažovacím skúškam a návrhom sanačných a rekonštrukčných opatrení.</h3></div>
+    <div class="company"><h2>Analytická činnosť</h2>Zameranie konštrukcií 3D skenerom, prehliadky konštrukcií a mostov s využitím dronov, ako aj výškové práce zaškolenými horolezcami 
+        (diagnostika, menšie sanácie, monitoring trhlín, kontrola ložísk, lokálna diagnostika stavu predpätia, meranie priehybov, osádzanie tenzometrov pre tenzometrické merania, ...).</h3></div>
+    <div class="company"><h2>Ostatná činnosť</h2>Publikačná a editačná činnosť. Organizovanie spoločenských a odborných podujatí a vydavateľská činnosť  </h3></div>
+
+    </article>
+
+  <footer>
+    <section class="quote">
+    <p> <i class="underline">.... každá cesta, aj našim životom, je len spojnicou medzi mostami .... </i></p>
+    <p><i>.... each road, even that of our life, is just a link between bridges ...</i></p>
+  </section>
+    <section class="main-footer">
+
+        <p class="follow">SLEDUJTE NÁS</p>
+        <section class="footer"><a href="https://www.facebook.com/ProPonti/"><img class="socials" src="/ProPonti/Images/Kontakt_Logá/fb.png"></a>
+        <a href="https://sk.linkedin.com/in/peter-paulik-8307629"><img class="socials" src="/ProPonti/Images/Kontakt_Logá/LinkedIN.png"></a>   
+        <a href="https://www.youtube.com/user/perpatres1/videos"><img class="socials" src="/ProPonti/Images/Kontakt_Logá/Youtube.png"></a>
+        <a href="https://blog.sme.sk/peterpaulik"><img class="socials" src="/ProPonti/Images/Kontakt_Logá/sme.blog.png"></a>
+        <a href="http://www.fib-sk.sk/clenovia"><img class="socials" src="/ProPonti/Images/Kontakt_Logá/logo_green.png"></a></section>
+        
+    </section>
+
+    <section class="footer-nav" style="text-decoration: none">
+        <a class="transition" onmouseover="applyTransition(this)" onmouseout="resetTransition(this)" href="A">Kontakt</a>
+        <a class="transition" onmouseover="applyTransition(this)" onmouseout="resetTransition(this)" href="B">Patresova osmička</a>
+        <a class="transition" onmouseover="applyTransition(this)" onmouseout="resetTransition(this)" href="C">Autorizačné osvedčenie</a></section>
+
+    <section class="footer-text"style="text-underline-offset: 5px;">   
+
+            <p>©PROPONTI - ALL RIGHTS RESERVED</p>
+
+        </section>
+
+    </footer>
+  
+  
+  
+    
+  <script type="text/javascript" src="/ProPonti/animation.js"></script>
+  <script type="text/javascript" src="/ProPonti/transition.js"></script>
+  <script type="text/javascript" src="/ProPonti/javascript/dropdown.js"></script>
+
+
 </body>
 </html>
 

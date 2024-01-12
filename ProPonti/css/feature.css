@@ -1,0 +1,34 @@
+
+
+  
+  .menu-toggle {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+  }
+  
+  .dropdown-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+  }
+  
+  .dropdown-menu li {
+    background-color: #555;
+    padding: 10px;
+  }
+  
+  .dropdown-menu a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* Media query for responsive design */
