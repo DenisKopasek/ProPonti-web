@@ -112,7 +112,8 @@ footer {
     text-align: center;
     transform: translateX(-50%);
     font-size: 1.3rem;
-    width: 357px;
+    width: fit-content;
+    white-space: nowrap;
 }
 
 .footer-text p {
@@ -137,6 +138,7 @@ footer {
     text-decoration: none;
     font-size: 1.3rem;
     line-height: 2.5rem;
+    white-space: nowrap;
 
 }
 
@@ -153,3 +155,29 @@ footer {
     transform: translateX(-10px);
     color: #ff0000; /* Change to your desired color */
   }
+
+
+  @media screen and (max-width: 355px) {
+
+
+    .footer-text {
+        white-space: normal;
+    }
+
+    .footer-text p {
+        text-decoration: none;
+        white-space: normal;
+    }
+
+    .footer {
+        top: 30%;
+    }
+
+    .follow {
+        top: -20%;
+    }
+
+    .footer-nav{
+        top: 50%;
+    }
+}

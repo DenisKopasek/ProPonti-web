@@ -22,7 +22,7 @@ article{
     display: inline-block;
     justify-content: left;
     vertical-align: top;
-    width: 400px;
+    width: auto;
     max-width: 400px;
     height: 400px;
     text-align: justify;
@@ -71,6 +71,8 @@ article{
         
     }
 
+    
+
 
 
     .description{
@@ -90,4 +92,15 @@ article{
     }
 
   
+    }
+
+
+
+    @media screen and (max-width: 350px) {
+    .PPlogo img {
+        margin-top: 200px;
+    }
+
+    .company{
+        height: fit-content;
     }

@@ -85,7 +85,10 @@ header {
   @media screen and (max-width: 1250px) {
     .menu-toggle {
       display: block;
-
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
     }
 
   
@@ -94,7 +97,7 @@ header {
       flex-direction: column;
       width: 100vw;
       position: absolute;
-      top: 60px;
+      top: 50px;
       left: 0;
       transform: translateX(-50%);
       background-color: #000000;
@@ -112,9 +115,13 @@ header {
 
 
     }
+    .show {
+      width: 100vw;
+    }
 
    
   }
+
 
   @media screen and (max-width: 370px) {
     .nav {
