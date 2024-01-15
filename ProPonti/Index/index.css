@@ -27,14 +27,19 @@ article{
     height: 400px;
     text-align: justify;
     position: relative;
-    margin: 0px 4.5vw;
     flex: 3;
     border: 1px solid #000000; /* Border style and color */
     margin-bottom: 10px;
     padding: 10px 50px;
     margin: 3vw 3vw 3vw 3vw;
-
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
 }
+
+.company.show {
+    opacity: 1;
+}
+
 
 .description {
     margin: 200px auto 00px auto;
@@ -91,6 +96,7 @@ article{
        
     }
 
+
   
     }
 
@@ -104,3 +110,8 @@ article{
     .company{
         height: fit-content;
     }
+
+    .DOTS {
+        top: 85%;
+    }
+}
