@@ -13,7 +13,9 @@ article{
     gap: 10vw;
     justify-content: center;
     text-align: center;
-    margin: 0;
+    margin: auto;
+    margin-bottom: 3vh;
+ 
 }
 
 
@@ -31,9 +33,9 @@ article{
     border: 1px solid #000000; /* Border style and color */
     margin-bottom: 10px;
     padding: 10px 50px;
-    margin: 3vw 3vw 3vw 3vw;
+    margin: 3vh 3vh 3vh 3vh;
     opacity: 0;
-    transition: opacity 0.5s ease-in;
+    transition: opacity 1s ease-in;
 }
 
 .company.show {
@@ -62,7 +64,47 @@ article{
 }
 
 
+.strip {
+    color: #ffffff;
+    width: 100vw;
+    height: 125px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 3vh;
+  }
 
+
+.number-container {
+ display: inline-block;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+}
+
+.number {
+    display: flex;
+    flex-direction: row;
+    font-size: 4rem;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+
+}
+
+.a {
+    margin: 0;
+    font-size: 1rem;
+    align-items: center;
+    display: grid;
+    vertical-align: middle;
+    justify-content: center; 
+    left: 50%;
+
+}
 
 @media screen and (min-width: 981px) {
     .Logoanddesc{
