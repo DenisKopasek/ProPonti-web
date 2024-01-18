@@ -9,6 +9,14 @@
 }
 
 
+
+@font-face {
+    font-family: 'Cronos';
+    src: url('/ProPonti/Cronos-Pro_12459.ttf') format('truetype');
+   
+  }
+
+
 html {
     font-size: 100%;
     line-height: 1.2;
@@ -24,8 +32,10 @@ html {
 
 body {
     color: rgb(0, 0, 0);
-    font-family: Tahoma, Verdana, sans-serif;
-    background: rgb(232, 232, 232);
+    font-family: cronos, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    background: rgb(255, 255, 255);
     margin: 0;
     max-width: 100vw;
 

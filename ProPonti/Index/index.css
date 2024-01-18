@@ -13,29 +13,73 @@ article{
     gap: 10vw;
     justify-content: center;
     text-align: center;
-    margin: auto;
-    margin-bottom: 3vh;
+    margin: 6vh auto;
+    overflow: hidden;
+
  
 }
 
+.circles {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    opacity: 0.6;
+    transform-origin: center center;
+    transform: translateX(-50%) translateY(-50%);
+    width: 600px;
+    user-select: none;
+
+}
+
+
+.deg72 {
+    position: relative;
+    left: -37%;
+    top: -30%;
+    transform: rotate(72deg);
+
+}
+
+.deg144 {
+    position: relative;
+    left: -27%;
+    top: -30%;
+    transform: rotate(144deg);
+
+}
+
+.deg216 {
+    position: relative;
+    left: -27%;
+    top: -25%;
+    transform: rotate(216deg);
+
+}
+
+.deg288 {
+    position: relative;
+    left: -27%;
+    top: -25%;
+    transform: rotate(288deg);
+
+}
 
 
 .company {
     display: inline-block;
     justify-content: left;
     vertical-align: top;
-    width: auto;
-    max-width: 400px;
-    height: 400px;
-    text-align: justify;
+    width: 500px;
+    max-width: 500px;
+    height: 500px;
     position: relative;
-    flex: 3;
-    border: 1px solid #000000; /* Border style and color */
     margin-bottom: 10px;
-    padding: 10px 50px;
-    margin: 3vh 3vh 3vh 3vh;
+    padding: 50px 75px;
+    margin: 0 3vh 0 3vh;
     opacity: 0;
     transition: opacity 1s ease-in;
+    top: 50%;
+
 }
 
 .company.show {
@@ -43,15 +87,19 @@ article{
 }
 
 
+
+
+
 .description {
     margin: 200px auto 00px auto;
     height: 200px;
     max-width: 50ch;
-
+    font-size: 1.2rem;
 }
 
 .Logoanddesc { 
     margin-bottom: 200px;
+
 }
 
 .PPlogo {
@@ -156,4 +204,104 @@ article{
     .DOTS {
         top: 85%;
     }
+}
+
+
+
+.projects {
+    position: relative;
+    top: 0%;
+    width: 100vw;
+    max-width: 100vw;
+    height: auto;
+    margin: 3vh auto 3vh auto;
+}
+
+.head {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.photos {
+   
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+    max-width: 100vw;
+    margin: 0 100px;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+
+}
+
+.photos.show {
+    opacity: 1;
+}
+
+
+
+
+
+.project-photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 500px;
+    height: 280px;
+    margin: 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+
+}
+
+
+
+
+
+
+
+
+.function {
+    position: absolute;
+    top: 30%;
+    left: 53%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 1.8rem;
+}
+
+
+.companyfunctions {
+    font-size: 1.2rem;
+    position: absolute;
+    top: 60%;
+    left: 53%;
+    width: 60%;
+    transform: translateX(-50%) translateY(-50%);
+
+
+}
+
+
+@media screen and (max-width: 1290px) {
+    .photos{
+    display: inline-block;
+    margin: 0 auto 0 auto;
+
+    
+}
+    .project-photos {
+    margin: 0px 0px 50px 0px;
+}
+}
+
+@media screen and (max-width: 1800px) {
+    .photos{
+    grid-template-columns: repeat(2, 1fr);
+}
 }

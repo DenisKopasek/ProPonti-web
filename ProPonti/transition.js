@@ -34,12 +34,18 @@ function applyTransition(element) {
     // Create an Intersection Observer
     var observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
   
-    // Target all elements with the class "company"
+    // Target all elements with the class "company" and "photos"
     var companies = document.querySelectorAll('.company');
+    var photos = document.querySelectorAll('.photos');
   
     // Observe each "company" element
     companies.forEach(function(company) {
       observer.observe(company);
+    });
+  
+    // Observe each "photos" element
+    photos.forEach(function(photo) {
+      observer.observe(photo);
     });
   });
   
