@@ -32,7 +32,7 @@ function applyTransition(element) {
 
   document.addEventListener('DOMContentLoaded', function() {
     // Create an Intersection Observer
-    var observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
+    var observer = new IntersectionObserver(handleIntersection, { threshold: 0.3 });
   
     // Target all elements with the class "company" and "photos"
     var companies = document.querySelectorAll('.company');

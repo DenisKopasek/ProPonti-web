@@ -19,6 +19,10 @@ article{
  
 }
 
+h2{
+    color: red;
+}
+
 .circles {
     position: absolute;
     left: 50%;
@@ -261,7 +265,58 @@ article{
 }
 
 
-
+.image-container {
+    position: relative;
+    overflow: hidden;
+    width: 500px;
+    height: 280px;
+  }
+  
+  .zoomable-image {
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0); /* Transparent initially */
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px; /* Adjust the size of your icon */
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .image-container:hover .zoomable-image {
+    transform: scale(1.2); /* Adjust the zoom level */
+  }
+  
+  .image-container:hover .overlay {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay on hover */
+  }
+  
+  .image-container:hover .icon {
+    opacity: 1;
+  }
 
 
 
@@ -304,4 +359,11 @@ article{
     .photos{
     grid-template-columns: repeat(2, 1fr);
 }
+}
+
+@media screen and (min-width: 1288px) {
+    .circles{
+        
+
+    }
 }
