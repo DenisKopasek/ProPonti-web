@@ -46,6 +46,18 @@ h2{
 
 }
 
+.maincircle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    opacity: 0.6;
+    transform-origin: center center;
+    transform: translateX(-50%) translateY(-50%);
+    width: 1000px;
+    max-width: 1000px;
+    user-select: none;
+}
+
 .descircles {
     position: absolute;
     width: 700px; 
@@ -60,7 +72,7 @@ h2{
     position: relative;
     left: -37%;
     top: -23%;
-    transform: rotate(0deg);
+    transform: rotate(72deg);
 
 }
 
@@ -115,6 +127,7 @@ h2{
     position: absolute;
     width: 50ch;
     top: 50%;
+    left: 50%;
     transform: translateX(-47%) translateY(-50%);
     justify-content: center;
 
@@ -302,10 +315,57 @@ h2{
     .DOTS {
         top: 85%;
     }
+
+    .maincircle {
+        width: 100vw;
+    }
 }
 
 
 
+
+@media screen and (max-width: 1060px){
+    .PPlogo{
+        width: 60vw;
+    }
+    .descircles{
+        width: 100vw;
+        top: 100px;
+        
+    }
+
+    .maincircle {
+        width: 100vw;
+    }
+.descircles{
+    width: 700px;
+    max-width: 700px;
+    top: 50px;
+}
+
+
+
+.activity{
+    margin-bottom: 0;
+    height: fit-content;
+    top: 3000px;
+}
+
+.Logoanddesc{
+    margin-top: 100px;
+}
+
+.texts{
+    top: 25%;
+
+}
+
+.ProPontibanner{
+    top: -100px;
+    width: 100%;
+}
+
+    }
 
 
 @media screen and (max-width: 1290px) {
@@ -313,36 +373,38 @@ h2{
     .Logoanddesc{
         display: grid;
         height: fit-content;
-        margin-bottom: 170px;
+        margin-bottom: 600px;
     }
+
 
 
     .description{
         position: relative;
         left: 50%;
-        top: 420px;
+        top: 900px;
         transform: translateX(-50%);
     }
 
     .PPlogo{
         position: relative;
-        left: 0%;
-        top: -370px;
+        left: 50%;
+        top: 0px;
         transform: translateX(-50%);
     }
 
     .activity{
         position: relative;
-        top: 170px;
+        top: 200px;
+        margin-bottom: 300px;
     }
 
 
     .strip{
-        top: 170px;
+        top: 000px;
     }
 
     .projects {
-        top: 170px;
+        top: 0px;
         margin-bottom: 280px;
     }
 }
@@ -354,6 +416,32 @@ h2{
     grid-template-columns: repeat(2, 1fr);
     margin: 0 auto;
 }
+
+.Logoanddesc{
+    display: grid;
+    height: fit-content;
+    margin-bottom: 600px;
+}
+
+.description{
+    position: relative;
+    left: 50%;
+    top: 900px;
+    transform: translateX(-50%);
+}
+.PPlogo{
+    position: relative;
+    left: 50%;
+    top: 0px;
+    transform: translateX(-50%);
+}
+    .activity{
+        position: relative;
+        top: 200px;
+        margin-bottom: 300px;
+    }
+
+
 }
 
 @media screen and (min-width: 2225px) {
@@ -378,3 +466,88 @@ h2{
         width: fit-content;
     }
 }
+
+@media screen and (max-width: 700px) {
+    .descircles{
+        width: 100vw;
+      
+ 
+    }
+    .texts{
+        width: 100%;
+    }
+
+
+
+.image-container{
+    width: 100%;
+    height: auto;
+
+}
+
+.photos{
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+html {
+    font-size:  0.8rem;
+}
+
+.deg72 .deg144 .deg216 .deg288{
+    left: 50%;
+    top: 50%;
+
+}
+
+.Logoanddesc{
+    display: grid;
+    height: fit-content;
+    margin-bottom: 600px;
+}
+.activity{
+    width: 100%;
+    max-width: 100%;
+}
+.circles{
+    width: 100%;
+
+
+}
+.company{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.description{
+    position: relative;
+    left: 50%;
+    top: 900px;
+    transform: translateX(-50%);
+}
+
+.PPlogo{
+    position: relative;
+    left: 50%;
+    top: 0px;
+    transform: translateX(-50%);
+}
+
+.activity{
+    position: relative;
+    top: 200px;
+    margin-bottom: 300px;
+}
+
+
+.strip{
+    top: 000px;
+}
+
+.projects {
+    top: 0px;
+    margin-bottom: 280px;
+}
+    }
