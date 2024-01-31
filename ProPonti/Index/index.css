@@ -110,14 +110,13 @@ h2{
     max-width: 500px;
     height: 500px;
     position: relative;
-    margin-bottom: 10px;
     padding: 50px 75px 0 75px;
     margin: 0 3vh 0 3vh;
     opacity: 0;
     transition: opacity 1s ease-in;
     top: 50%;
-
-}
+  
+  }
 
 .company.show {
     opacity: 1;
@@ -305,23 +304,7 @@ h2{
 
 }
 
-@media screen and (max-width: 350px) {
-    .PPlogo img {
-        margin-top: 200px;
-    }
 
-    .company{
-        height: fit-content;
-    }
-
-    .DOTS {
-        top: 85%;
-    }
-
-    .maincircle {
-        width: 100vw;
-    }
-}
 
 
 
@@ -383,7 +366,7 @@ h2{
     .description{
         position: relative;
         left: 50%;
-        top: 900px;
+        top: 10vh;
         transform: translateX(-50%);
     }
 
@@ -470,118 +453,201 @@ h2{
 }
 
 @media screen and (max-width: 700px){
-html{
-    font-size: 0.7rem;
-}
-
-    .Logoanddesc{
-        margin-bottom: 0px;
-        width: 100vw;
+    html{
+      font-size: 0.7rem;
     }
     
-    .photos{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        width: fit-content;
-    }
+      .Logoanddesc{
+          margin-bottom: 0px;
+          
+      }
+      
+      .photos{
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          width: fit-content;
+      }
 
-    .zoomable-image{
-        width: 100vw;
-    }
-    .image-container{
-        width: 100vw;
-    }
-
-    .descircles{
-        width: 100vw;
-    }
-
-  
-
-    .description{
+      .description{
         top: 650px;
-        width: 80%;
+
     }
-    .company{
+      .descircles{
+     
+
+          width: 100vw;
+          max-width: 500px;
+          margin-left: 0;
+          margin-right: 0;
+      }
+    
+    
+    
+    
+      .company{
         margin: 0;
         padding: 0;
-        vertical-align: middle;
+        top: 0%;
         width: 100%;
-        top: 1000px;
-    }
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: -150px;
 
-    .maincircle{
-        width: 100%;
-        overflow: hidden;
-    }
-
-    .PPlogo{
-        width: 100vw;
-    }
-
-
-    .ProPontibanner{
+       
+      }
+    
+      .maincircle{
+          width: 100%;
+          overflow: hidden;
+      }
+    
+      .PPlogo{
+          width: 100vw;
+          top: -100px;
+      }
+    
+    
+      .ProPontibanner{
+          position: absolute;
+          width: 62%;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%)translateY(-50%);
+      }
+    
+    
+      .circles{
+          width: 100%;
+          overflow: hidden;
+          
+      }
+    
+    
+      .texts{
+          width: 75%;
+          
+      }
+      .function{
+          width: 50%;
+          top: 38%;
+          font-size: 3.5vw;
+      }
+    
+      .companyfunctions{
         position: absolute;
-        width: 62%;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%)translateY(-50%);
-    }
-
-    .deg72{
-        transform: rotate(0)translateX(-50%);
-        left: 50%;
+          width: 60%;
+          top: 55%;
+    
+      }
+    
+    
+      .PPlogo{
       
-    }
+          position: relative;
+      }
+    
+    .activity{
+      width: 100vw;
+      margin: 0;
+      height: fit-content;
+      display: grid;
+    top: 500px;
+    overflow: visible;
+     
+      }
 
-    .circles{
-        width: 100%;
-        overflow: hidden;
-    }
+      .image-container{
+        width: 98vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        height: auto;
+      }
+    
 
-    .deg144{
-        transform: rotate(0)translateX(-50%);
+      .deg72 {
+        position: relative;
         left: 50%;
-        top: -17%;
-            
-          }
+        top: 50%;
+        transform: translateX(-50%)translateY(-50%);
 
-    .deg216{
-        transform: rotate(0)translateX(-50%);
-        left: 50%;
-    top: -17%;
         
-        }
-
-    .deg288{
-        transform: rotate(0)translateX(-50%);
-        left: 50%;
-        top: -17%;
-            
-            }
-    .texts{
-        width: 80%;
-        
+ 
+    
     }
+    
+    .deg144 {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%)translateY(-50%);
+    
+    }
+    
+    .deg216 {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%)translateY(-50%);
+    
+    }
+    
+    .deg288 {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%)translateY(-50%);
+    
+    }
+
+    .strip{
+        position: relative;
+        top: 600px;
+    }
+
+    .projects{
+        top: 600px;
+    }
+
+    .head{
+        position: relative;
+        top: 000px;
+    }
+
+      }
+    
+    @media screen and (max-width: 450px){
     .function{
-        width: 50%;
-        top: 130px;
+        top: 40%;
     }
 
     .companyfunctions{
-        width: 60%;
+        top: 53%;
+    }
+
+    .company{
+        margin-top: -100px;
+        margin-bottom: -100px;
+    }
+
+    .move{
+        top: 55%;
+    }
+
+    .description{
+        top: 500px;
+
     }
 
     .activity{
-        top: -750px;
+        top: 350px;
     }
 
-    .PPlogo{
-        top: -150px;
+    .strip{
+        top: 400px;
     }
 
-.activity{
-    overflow: visible;
-}
-
+    .projects{
+        top: 400px;
     }
+
+      }
