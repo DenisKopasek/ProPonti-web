@@ -234,8 +234,8 @@ h2{
 .image-container {
     position: relative;
     overflow: hidden;
-    width: 500px;
-    height: 280px;
+    width: 450px;
+    height: 260px;
   }
   
   .zoomable-image {
@@ -395,10 +395,12 @@ h2{
 }
 
 
+
+
 @media screen and (max-width: 1800px) {
 
     .photos{
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     margin: 0 auto;
 }
 
@@ -427,6 +429,14 @@ h2{
     }
 
 
+}
+
+@media screen and (max-width: 1485px) {
+
+    .photos{
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+}
 }
 
 @media screen and (min-width: 2225px) {

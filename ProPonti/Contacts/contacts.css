@@ -1,0 +1,73 @@
+.companyID {
+    position: absolute;
+    top: 0;
+    margin: 0;
+
+    height: 1000px;
+    width: 100%;
+}
+
+.members {
+    width: 125px;
+    height: auto;
+    position: absolute;
+    top: 0%;
+    
+}
+
+.trap {
+    position: relative;
+    top: 50%;
+    height: 1000px;
+}
+
+.upper {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.lower {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+h1 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.contacts{
+    position: relative;
+    top: 100px;
+    width: 100vw;
+    height: 1000px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.PP {
+    position: relative;
+    left: 30%;
+    top: 0%
+}
+
+.PH {
+    position: absolute;
+    left: 30%;
+    top: 0%;
+}
+
+.namesandphotos1 {
+    position: absolute;
+    top: 5%;
+    width: 100%;
+}
+
+
+.namesandphotos2 {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+}
