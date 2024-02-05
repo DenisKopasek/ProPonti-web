@@ -1,10 +1,13 @@
 .companyID {
     position: absolute;
     top: 0;
-    margin: 0;
+    height: 160px;
+    width: 80%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 10vw;
 
-    height: 1000px;
-    width: 100%;
 }
 
 .members {
@@ -17,20 +20,23 @@
 
 .trap {
     position: relative;
-    top: 50%;
+    top: 25%;
     height: 1000px;
+    margin: 0 10vw;
+    max-width: 1000px;
 }
 
 .upper {
     position: absolute;
-    right: 0;
+    right: 0%;
     top: 0;
+    line-height: 0.8rem;
 }
 
 .lower {
     position: absolute;
-    left: 0;
     top: 0;
+    line-height: 0.8rem;
 }
 
 h1 {
@@ -42,27 +48,33 @@ h1 {
     position: relative;
     top: 100px;
     width: 100vw;
-    height: 1000px;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    height: 800px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 ;
 }
 
 .PP {
     position: relative;
-    left: 30%;
-    top: 0%
+    left: 25%;
+    top: 0%;
+    width:75%;
+
 }
 
 .PH {
     position: absolute;
-    left: 30%;
+    left: 25%;
     top: 0%;
+    width: 75%;
 }
 
 .namesandphotos1 {
     position: absolute;
     top: 5%;
     width: 100%;
+    max-width: 1000px;
+    height: 200px;
 }
 
 
@@ -70,4 +82,52 @@ h1 {
     position: absolute;
     top: 30%;
     width: 100%;
+    max-width: 1000px;
+    height: 200px;
+}
+
+@media screen and (max-width: 680px) {
+
+    .companyID{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        height: 1000px;
+    }
+
+    
+}
+    
+@media screen and (max-width: 750px) {
+    .companyID {
+        position: relative;
+        grid-template-columns: repeat(1, 1fr); /* Change grid to single column */
+        margin: 0 auto; /* Remove the margin */
+        height: 400px;
+    }
+
+    .upper, .lower {
+        position: relative; /* Change from absolute to static for normal document flow */
+        top: 0; /* Remove the top positioning */
+        right: auto; /* Remove the right positioning */
+        width: 100%; /* Take full width of the container */
+        text-align: left; /* Center the content */
+        margin: auto auto;
+    }
+
+    .trap {
+        top: 10px;
+    }
+
+    .namesandphotos1{
+        display: flex;
+    }
+
+    .members{
+        flex: 1;
+    }
+
+    .PP{
+        flex: 5;
+    }
+
 }
