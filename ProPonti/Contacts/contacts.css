@@ -3,10 +3,12 @@
     top: 0;
     height: 160px;
     width: 80%;
-    max-width: 1000px;
+    max-width: 900px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 0 10vw;
+    margin: 0 0;
+    left: 50%;
+    transform: translateX(-50%);
 
 }
 
@@ -22,8 +24,11 @@
     position: relative;
     top: 25%;
     height: 1000px;
-    margin: 0 10vw;
-    max-width: 1000px;
+    margin: 0;
+    max-width: 900px;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .upper {
@@ -47,15 +52,15 @@ h1 {
 .contacts{
     position: relative;
     top: 100px;
-    width: 100vw;
+    width: 80vw;
     height: 800px;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0 ;
 }
 
 .PP {
-    position: relative;
+    position: absolute;
     left: 25%;
     top: 0%;
     width:75%;
@@ -86,23 +91,15 @@ h1 {
     height: 200px;
 }
 
-@media screen and (max-width: 680px) {
-
+   
+@media screen and (max-width: 800px) {
     .companyID{
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        height: 1000px;
-    }
-
-    
-}
-    
-@media screen and (max-width: 750px) {
-    .companyID {
         position: relative;
         grid-template-columns: repeat(1, 1fr); /* Change grid to single column */
-        margin: 0 auto; /* Remove the margin */
-        height: 400px;
+        margin: 0 0; /* Remove the margin */
+        height: fit-content;
+        width: 100%;
     }
 
     .upper, .lower {
@@ -111,23 +108,77 @@ h1 {
         right: auto; /* Remove the right positioning */
         width: 100%; /* Take full width of the container */
         text-align: left; /* Center the content */
-        margin: auto auto;
+        margin: auto 0;
     }
 
     .trap {
-        top: 10px;
+        top: 0px;
+        margin-top: 5vw;
+        width: 100%;
     }
 
     .namesandphotos1{
         display: flex;
+        row-gap: 100px;
+ 
     }
 
-    .members{
-        flex: 1;
+    .namesandphotos2{
+        display: flex;
+        width: 100%;
+ 
     }
 
-    .PP{
-        flex: 5;
+    .members {
+        width: 125px;
+        height: auto;
+        position: absolute;
+        top: 0%;
+      
     }
 
+    .PP, .PH {
+        position: absolute;
+        width: 300px;
+        left: 30%;
+        width: fit-content;
+        margin-left: 30px;
+    }
+
+    .contacts {
+        height: 900px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 475px) {
+    .contacts{
+    font-size: 0.7rem;
+    height: 800px;
+    }
+   
+    .PP, .PH {
+
+        margin-left: 60px;
+    }
+
+    .companyID{
+        height: fit-content;
+    }
+
+    .namesandphotos1{
+    height: 150px;
+ 
+    }
+
+    .namesandphotos2{
+    height: 150px;
+ 
+    }
+
+    .trap{
+        height: 250vw;
+    }
 }
